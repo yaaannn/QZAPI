@@ -10,9 +10,9 @@ GET http://教务系统URL/app.do?
 ```js
 request.header{token:'运行身份验证authUser时获取到的token，有过期机制'},
 request.data{
-			'method':'getEarlyWarnInfo',  //必填
-			'xh':'2017168xxxxx',  //条件所限制，暂未明晰
-            'history':1 //条件所限，暂未明晰。1为历史预警，0为当前预警
+		'method':'getEarlyWarnInfo',  //必填
+		'xh':'2017168xxxxx',  //条件所限制，暂未明晰
+        	'history':1 //条件所限，暂未明晰。1为历史预警，0为当前预警
 			}
 ```
 

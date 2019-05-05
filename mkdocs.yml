@@ -7,8 +7,10 @@ theme:
     
 repo_name: TLingC/QZAPI
 repo_url: https://github.com/TLingC/QZAPI
-
 edit_uri: 'edit/master/docs'
+
+google_analytics: ['UA-139537764-1', 'qzapi.github.tlingc.com']
+
 nav:    
   - '首页':
     - '关于文档': index.md

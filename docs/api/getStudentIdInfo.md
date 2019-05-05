@@ -4,15 +4,16 @@
 
 ##请求
 ``` url
-GET http://教务系统URL/app.do?
+GET http://jwxt.xxxx.edu.cn/app.do?method=getStudentIdInfo&xh={$学号}
 ```
-##请求参数
+
+##参数
 ```js
 request.header{token:'运行身份验证authUser时获取到的token，有过期机制'},
 request.data{
-			'method':'getStudentIdInfo',  //必填
-			'xh':'2017168xxxxx'  //疑似非必填，添加或不添加本参数返回相同值
-			}
+	'method':'getStudentIdInfo',  //必填
+	'xh':'2017168xxxxx'  //疑似非必填，添加或不添加本参数返回相同值
+}
 ```
 
 ##返回
@@ -24,5 +25,5 @@ request.data{
 
 ##例程
 ``` url
-GET http://教务系统URL/app.do?method=getStudentIdInfo&xh=101010000
+GET http://jwxt.xxxx.edu.cn/app.do?method=getStudentIdInfo&xh=101010000
 ```

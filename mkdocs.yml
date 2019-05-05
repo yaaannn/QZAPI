@@ -16,7 +16,16 @@ nav:
   - 'API':
     - '登录': api/authUser.md
     - '时间信息': api/getCurrentTime.md
-    - '一周课程表': api/getKbcxAzc.md
+    - '课程信息': api/getKbcxAzc.md
+    - '成绩信息': api/getCjcx.md
+    - '考试信息': api/getKscx.md
+    - '学籍预警信息': api/getEarlyWarnInfo.md
+    - '教学楼信息': api/getJxlcx.md
+    - '空教室信息': api/getKxJscx.md
+    - '用户信息': api/getStudentIdInfo.md
+    - '账号信息': api/getUserInfo.md
+    - '学年学期信息': api/getXnxq.md
+    - '校区信息': api/getXqcx.md
   - '相关项目':
     - 'PHP': related/php.md
 

@@ -3,16 +3,17 @@
 
 ##请求
 ``` url
-GET http://教务系统URL/app.do?
+GET http://jwxt.xxxx.edu.cn/app.do?method=getCjcx&xh={$学号}&xnxqid={$学年学期ID}
 ```
-##请求参数
+
+##参数
 ```js
 request.header{token:'运行身份验证authUser时获取到的token，有过期机制'},
 request.data{
-			'method':'getCjcx',  //必填
-			'xh':'2017168xxxxx',  //必填，可以添加非本token学号查询他人成绩
-            'xqxnid':'2017-2018-2' //非必填，不填输出全部成绩
-			}
+	'method':'getCjcx',  //必填
+	'xh':'2017168xxxxx',  //必填，可以添加非本token学号查询他人成绩
+	'xqxnid':'2017-2018-2' //非必填，不填输出全部成绩
+}
 ```
 
 ##返回
@@ -36,5 +37,5 @@ request.data{
 
 ##例程
 ``` url
-GET http://教务系统URL/app.do?method=getCjcx&xh=201716xxxxx&xnxqid=2017-2018-2
+GET http://jwxt.xxxx.edu.cn/app.do?method=getCjcx&xh=201716xxxxx&xnxqid=2017-2018-2
 ```

@@ -1,21 +1,22 @@
 #空教室信息
-获取空教室
+获取空教室信息
 
 ##请求
 ``` url
-GET http://教务系统URL/app.do?
+GET http://jwxt.xxxx.edu.cn/app.do?method=getKxJscx&time={$日期}&idleTime={$时间段}
 ```
-##请求参数
+
+##参数
 ```js
 request.header{token:'运行身份验证authUser时获取到的token，有过期机制'},
 request.data{
-			'method':'getKxJscx',  //必填
-			'time':'2019-04-28',  //格式"YYYY-MM-DD",非必填，默认返回当前日期空闲教室
-			'idleTime':'allday',  //有allday,am,pm,night四种取值，非必填，默认值疑似allday
-            'xqid':'1' , //校区ID，非必填
-            'jxlid':'77',  //教学楼ID，非必填
-            'classroomNumber':'30'  //可选项 30,30-40,40-50,60(分别意为30人以下，30-40人,···,60人以上)
-			}
+	'method':'getKxJscx',  //必填
+	'time':'2019-04-28',  //格式"YYYY-MM-DD",非必填，默认返回当前日期空闲教室
+	'idleTime':'allday',  //有allday,am,pm,night四种取值，非必填，默认值疑似allday
+	'xqid':'1' , //校区ID，非必填
+	'jxlid':'77',  //教学楼ID，非必填
+	'classroomNumber':'30'  //可选项 30,30-40,40-50,60(分别意为30人以下，30-40人,···,60人以上)
+}
 ```
 
 ##返回
@@ -55,5 +56,5 @@ request.data{
 
 ##例程
 ``` url
-GET http://教务系统URL/app.do?method=getKxJscx&time=2019-04-28&idleTime=allday
+GET http://jwxt.xxxx.edu.cn/app.do?method=getKxJscx&time=2019-04-28&idleTime=allday
 ```

@@ -1,19 +1,20 @@
-#时间信息
-获取当前时间、周次、学年等信息
+#课程信息
+获取一周的课程信息
 
 ##请求
 ``` url
-GET http://教务系统URL/app.do?
+GET http://jwxt.xxxx.edu.cn/app.do?method=getKbcxAzc&xh={$学号}&xnxqid={$学年学期ID}&zc={$周次}
 ```
-##请求参数
+
+##参数
 ```js
 request.header{token:'运行身份验证authUser时获取到的token，有过期机制'},
 request.data{
-			'method':'getKbcxAzc',  //必填
-			'xh':'2017168xxxxx',  //必填，使用与获取token时不同的学号，则可以获取到新输入的学号的课表
-			'xnxqid':'2018-2019-1',  //格式为"YYYY-YYYY-X"，非必填，不包含时返回当前日期所在学期课表
-			'zc':'1'  //必填
-			}
+	'method':'getKbcxAzc',  //必填
+	'xh':'2017168xxxxx',  //必填，使用与获取token时不同的学号，则可以获取到新输入的学号的课表
+	'xnxqid':'2018-2019-1',  //格式为"YYYY-YYYY-X"，非必填，不包含时返回当前日期所在学期课表
+	'zc':'1'  //必填
+}
 ```
 
 ##返回
@@ -43,5 +44,5 @@ request.data{
 
 ##例程
 ``` url
-GET http://教务系统URL/app.do?method=getKbcxAzc&xh=101010000&xnxqid=2018-2019-1&zc=5
+GET http://jwxt.xxxx.edu.cn/app.do?method=getKbcxAzc&xh=101010000&xnxqid=2018-2019-1&zc=5
 ```

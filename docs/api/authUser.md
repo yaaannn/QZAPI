@@ -3,9 +3,10 @@
 
 ##请求
 ``` url
-GET http://教务系统URL/app.do?
+GET http://jwxt.xxxx.edu.cn/app.do?method=authUser&xh={$学号}&pwd={$密码}
 ```
-##请求参数
+
+##参数
 ```js
 request.data{
 	"method":'authUser',  //必填
@@ -13,6 +14,7 @@ request.data{
 	"pwd":'登陆教务系统需要的密码'  //必填
 }
 ```
+
 ##返回
 ``` json
 {
@@ -27,6 +29,6 @@ request.data{
 
 ##例程
 ``` url
-GET http://教务系统URL/app.do?method=authUser&xh=17111111&pwd=1234578
+GET http://jwxt.xxxx.edu.cn/app.do?method=authUser&xh=17111111&pwd=1234578
 
 ```

@@ -21,7 +21,7 @@ request.data{
 [
     {
         "bz": null,  //未知
-        "cjbsmc": null,  //未知
+        "cjbsmc": null,  //特殊情况通报，例如“作弊”“缺考”
         "kclbmc": "必修", //课程类别名称
         "zcj": "88",  //总成绩
         "xm": "某某某",  //学生姓名

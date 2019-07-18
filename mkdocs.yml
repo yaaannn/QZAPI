@@ -30,6 +30,8 @@ nav:
     - '校区信息': api/getXqcx.md
   - '相关项目':
     - 'PHP': related/php.md
+    - 'Python': related/python.md
+    - '微信小程序': related/wechat_miniprogram.md
 
 markdown_extensions:
   - admonition

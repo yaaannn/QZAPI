@@ -12,7 +12,7 @@ request.header{token:'运行身份验证authUser时获取到的token，有过期
 request.data{
 	'method':'getKxJscx',  //必填
 	'time':'2019-04-28',  //格式"YYYY-MM-DD",非必填，默认返回当前日期空闲教室
-	'idleTime':'allday',  //有allday,am,pm,night四种取值，非必填，默认值疑似allday
+	'idleTime':'allday',  //有allday,am,pm,night,0102(意为第一小节-第二小节,也可以是任意取值，当取值为0104的时候与am等效)5种取值，默认值allday
 	'xqid':'1' , //校区ID，非必填
 	'jxlid':'77',  //教学楼ID，非必填
 	'classroomNumber':'30'  //可选项 30,30-40,40-50,60(分别意为30人以下，30-40人,···,60人以上)

@@ -690,16 +690,19 @@
                 
                 <h1 id="_1">登录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>登录帐号</p>
+<blockquote>
+<p>在调用其它接口前，需要使用本接口获取token。并在调用其它接口的请求的<code>header</code>中添加本接口获得的<code>token</code>参数。</p>
+</blockquote>
 <h2 id="_2">请求<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="err">GET http://jwxt.xxxx.edu.cn/app.do?method=authUser&amp;xh={$学号}&amp;pwd={$密码}</span>
 </pre></div>
 
 
 <h2 id="_3">参数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="nx">request</span><span class="p">.</span><span class="nx">data</span><span class="p">{</span>
-    <span class="s2">&quot;method&quot;</span><span class="o">:</span><span class="s1">&#39;authUser&#39;</span><span class="p">,</span>  <span class="c1">//必填</span>
-    <span class="s2">&quot;xh&quot;</span><span class="o">:</span><span class="s1">&#39;登陆教务系统使用的学号&#39;</span><span class="p">,</span>  <span class="c1">//必填</span>
-    <span class="s2">&quot;pwd&quot;</span><span class="o">:</span><span class="s1">&#39;登陆教务系统需要的密码&#39;</span>  <span class="c1">//必填</span>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;method&quot;</span><span class="p">:</span><span class="err">&#39;authUser&#39;</span><span class="p">,</span>  <span class="err">//必填</span>
+    <span class="nt">&quot;xh&quot;</span><span class="p">:</span><span class="err">&#39;登陆教务系统使用的学号&#39;</span><span class="p">,</span>  <span class="err">//必填</span>
+    <span class="nt">&quot;pwd&quot;</span><span class="p">:</span><span class="err">&#39;登陆教务系统需要的密码&#39;</span>  <span class="err">//必填</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -708,7 +711,7 @@
 <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;flag&quot;</span><span class="p">:</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="err">//是否成功</span> <span class="err">#成功1</span> <span class="err">失败0</span>
     <span class="nt">&quot;userrealname&quot;</span><span class="p">:</span><span class="s2">&quot;张三&quot;</span><span class="p">,</span> <span class="err">//用户真实姓名</span> <span class="err">#失败</span> <span class="err">null</span>
-    <span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="err">//令牌，调用其它API时需要附带到HTTP请求header中的token参数中</span> <span class="err">#失败</span> <span class="err">-1</span>
+    <span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="err">//令牌</span> <span class="err">#失败</span> <span class="err">-1</span>
     <span class="nt">&quot;userdwmc&quot;</span><span class="p">:</span><span class="s2">&quot;XXXX学院&quot;</span><span class="p">,</span> <span class="err">//用户所在学院名称</span> <span class="err">#失败</span> <span class="err">null</span>
     <span class="nt">&quot;usertype&quot;</span><span class="p">:</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="err">//用户类别</span> <span class="err">#已知学生身份为2</span> <span class="err">失败</span> <span class="err">null</span>
     <span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;登录成功&quot;</span> <span class="err">//返回消息</span>

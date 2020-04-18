@@ -2,8 +2,8 @@ site_name: 强智教务系统API文档
 theme:
   name: 'material'
   language: 'zh'
-  feature:
-    tabs: true
+  features:
+    - tabs
     
 repo_name: TLingC/QZAPI
 repo_url: https://github.com/TLingC/QZAPI

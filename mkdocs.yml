@@ -16,6 +16,7 @@ nav:
     - '关于文档': index.md
     - '支持学校': support.md
   - 'API':
+    - '开发前必读': api/index.md
     - '登录': api/authUser.md
     - '时间信息': api/getCurrentTime.md
     - '课程信息': api/getKbcxAzc.md

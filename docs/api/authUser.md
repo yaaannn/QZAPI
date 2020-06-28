@@ -1,8 +1,6 @@
 #登录
 登录帐号
 
-> 在调用其它接口前，需要使用本接口获取token。并在调用其它接口的请求的`header`中添加本接口获得的`token`参数。
-
 ##请求
 ``` url
 GET http://jwxt.xxxx.edu.cn/app.do?method=authUser&xh={$学号}&pwd={$密码}
